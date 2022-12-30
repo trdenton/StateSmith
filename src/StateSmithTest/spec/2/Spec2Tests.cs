@@ -18,6 +18,7 @@ public abstract class Spec2Tests : Spec2Fixture, IDisposable
 
     public void RunTester()
     {
+        int x = 55; // just anything to trigger another build...
         if (tester.HasExpectations())
         {
             tester.RunAndVerify(RunProcess);
